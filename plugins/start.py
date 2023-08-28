@@ -90,7 +90,7 @@ async def start_command(client: Client, message: Message):
         await asyncio.sleep(3600)
         for lazy in lazyfiles:
             await lazy.delete()
-        await warning_msg.edit_text("<b>All Movie's Files/Videos Deleted Successfully After 1 Hour ⏳</b>\n<i>↗️ Hopefully You Save It Successfully...</i>")
+        await warning_msg.edit_text("<b>All Movie's Files/Videos Deleted Successfully After 1 Hour ⏳</b>\n<i>↗️ Hopefully You Saved It Successfully...</i>")
         return
 
 
