@@ -86,11 +86,11 @@ async def start_command(client: Client, message: Message):
                 pass
         
         # Send a warning message to the user
-        warning_msg = await client.send_message(chat_id = message.from_user.id, text=f"<b>⏰ This Movies Files will be deleted in 1 Hour...</b>\n\n<b>TIP - <i>Forward It Anywhere Or Save It Privetly Before Downloading...</i></b>")
+        warning_msg = await client.send_message(chat_id = message.from_user.id, text=f"<b>⏰ This Movies Files will Auto Delete in 1 Hour...</b>\n\n<b>💡 TIP - <i><u>Forward It Anywhere Or Save It Privetly Before Downloading...</u></i></b>")
         await asyncio.sleep(3600)
         for lazy in lazyfiles:
             await lazy.delete()
-        await warning_msg.edit_text("<b>All Movie's Files Have Been successfully deleted After 1 Hour Hopefully You Saved It...</b>")
+        await warning_msg.edit_text("<b>All Movie's Files/Videos Deleted Successfully After 1 Hour ⏳</b>\n<i>↗️ Hopefully You Save It Successfully...</i>")
         return
 
 
