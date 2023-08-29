@@ -37,7 +37,7 @@ FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001774060800"))
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "<b>Hey, {mention}!  😃\n\nThis is Royal The Permanent File Store Bot. 🤖\n\nSend me any file And I will give you a permanent Sharable Link. I Support Channel Also! Check About Bot Button.\n\nNote❗\nDon't upload any adult content otherwise you will be ban. 🚫</b>")
+START_MSG = os.environ.get("START_MESSAGE", "<b>Hey, {mention}!  😃\n\nThis is Royal The Permanent File Store Bot. 🤖\n\nI am Working For <a href='t.me/wombackup'>This Channel</a></b>")
 try:
     ADMINS=[]
     for x in (os.environ.get("ADMINS", "1782834874").split()):
@@ -49,7 +49,7 @@ except ValueError:
 FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hey, {mention}\n\n<b>You need to join in my Channel to use me\n\nKindly Please join Channel ✅</b>")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
-CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "<b>{filename}\n\n         ❤ We Love You ❤\n🔥 ➹ Join Now [WOM-BACKUP 🚩](https://t.me/WOMBACKUP) ➷ 🔥</b>")
+CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "<b>{filename}\n\n         ❤ We Love You ❤\n🔥 ➹ Join Now [ <a href='t.me/wombackup'>WOM-BACKUP</a> ] ➷ 🔥</b>")
 
 #set True if you want to prevent users from forwarding files from bot
 PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" else False
