@@ -86,11 +86,11 @@ async def start_command(client: Client, message: Message):
                 pass
         
         # Send a warning message to the user
-        warning_msg = await client.send_message(chat_id = message.from_user.id, text=f"<b>⏰ This Files will Auto Delete in 1 Hour...\n\n↗️ <i><u>Before Download Kindly Forward It Anywhere Or Save It Privetly</u>...</i></b>")
-        await asyncio.sleep(3599)
+        warning_msg = await client.send_message(chat_id = message.from_user.id, text=f"<b>⏰ This Files will Auto Delete in 20 Minutes...\n\n↗️ <i><u>Before Download Kindly Forward It Anywhere Or Save It Privetly</u>...</i></b>")
+        await asyncio.sleep(1199)
         for lazy in lazyfiles:
-            await lazy.delete()
-        await warning_msg.edit_text("<b>⏰ All Files Deleted Successfully After 1 Hour...</b>\n\n<i>↘️ Hopefully You Saved It Carefully...</i>")
+            await lazy.delete(43200)
+        await warning_msg.edit_text("<b>⏰ All Files Deleted Successfully After 20 Minutes...</b>\n\n<i>↘️ Hopefully You Saved It Carefully...</i>")
         return
 
 
@@ -98,8 +98,8 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("😊 About Me", callback_data = "about"),
-                    InlineKeyboardButton("🔒 Close", callback_data = "close")
+                    InlineKeyboardButton("ABOUT ME", callback_data = "about"),
+                    InlineKeyboardButton("CLOSE", callback_data = "close")
                 ]
             ]
         )
