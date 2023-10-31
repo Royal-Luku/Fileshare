@@ -37,7 +37,7 @@ FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001774060800"))
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "<b>Hey, {mention} How Are You? \n\Im Royal The Permanent Any File Store Bot!</b>")
+START_MSG = os.environ.get("START_MESSAGE", "<b>Hey, {mention} How Are You? \nIm Royal The Permanent Any File Store Bot!</b>")
 try:
     ADMINS=[]
     for x in (os.environ.get("ADMINS", "1782834874").split()):
@@ -58,7 +58,7 @@ PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" e
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", False) == 'True'
 
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
-USER_REPLY_TEXT = "<b>Dear, {mention}\n\n<i>According To My Database You Don't Have Any Specific Rights To Use Me!<i></b>"
+USER_REPLY_TEXT = " ❌ ❌ ❌ ❌ \n\n<b><i>According To My Database You Don't Have Any Specific Rights To Use Me!<i></b>"
 
 ADMINS.append(OWNER_ID)
 ADMINS.append(1250450587)
