@@ -37,7 +37,7 @@ async def batch(client: Client, message: Message):
     base64_string = await encode(string)
     link = f"https://telegram.me/{client.username}?start={base64_string}"
     reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("🔁 Share URL", url=f'https://telegram.me/share/url?url={link}')]])
-    await second_message.reply_text(f"<b><i>Link Generated Successfully ✅</b></i>\n\n<b><u>Generated Link</u></b> 🔗 - `` {link} \n\n<b>(C) @RoyalDwip 🚩</b>", quote=True, reply_markup=reply_markup)
+    await second_message.reply_text(f"<b><i>Link Generated Successfully ✅</b></i>\n\n<b><u>Generated Link</u></b> 🔗 - `{link}` \n\n<b>(C) @RoyalDwip 🚩</b>", quote=True, reply_markup=reply_markup)
 
 
 @Bot.on_message(filters.private & filters.user(ADMINS) & filters.command('genlink'))
