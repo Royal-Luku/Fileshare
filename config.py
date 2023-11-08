@@ -58,7 +58,7 @@ PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" e
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", False) == 'True'
 
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
-USER_REPLY_TEXT = " ❌ ❌ ❌ ❌ \n\n<b><i>According To My Database You Don't Have Any Specific Rights To Use Me!<i></b>"
+USER_REPLY_TEXT = "<b>Hey, {message.from_user.mention} 🫠<i>You Don't Have Any Specific Rights To Use Me!<i></b>"
 
 ADMINS.append(OWNER_ID)
 ADMINS.append(1250450587)
