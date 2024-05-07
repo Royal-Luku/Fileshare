@@ -19,7 +19,7 @@ APP_ID = int(os.environ.get("APP_ID", "13708534"))
 API_HASH = os.environ.get("API_HASH", "51b384fee3c86840ee2ba7938f0beff4")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001961688904"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002073649382"))
 
 #OWNER ID
 OWNER_ID = int(os.environ.get("OWNER_ID", "1782834874"))
@@ -58,7 +58,7 @@ PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" e
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", False) == 'True'
 
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
-USER_REPLY_TEXT = "<b>Hey, {message.from_user.mention} 🫠<i>You Don't Have Any Specific Rights To Use Me!<i></b>"
+USER_REPLY_TEXT = "<b>Giving movies is my job\n taking movies is your job\n so mind your own business</b>"
 
 ADMINS.append(OWNER_ID)
 ADMINS.append(1250450587)
