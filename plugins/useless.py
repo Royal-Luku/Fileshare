@@ -17,4 +17,4 @@ async def stats(bot: Bot, message: Message):
 @Bot.on_message(filters.private & filters.incoming)
 async def useless(_,message: Message):
     if USER_REPLY_TEXT:
-        await message.reply(USER_REPLY_TEXT, reply_markup=InlineKeyboardMarkup([[("Developer 🧑‍💻", user_id=int(1782834874))]]))
+        await message.reply(USER_REPLY_TEXT, reply_markup=InlineKeyboardMarkup([[("Developer 🧑‍💻", url="t.me/Royaldwip")]]))
