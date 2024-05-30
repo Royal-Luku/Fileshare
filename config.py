@@ -37,7 +37,7 @@ FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001774060800"))
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "<b>Hello {}\n\nThis Is a Permanent File Store Bot Of @MovieVillaYT 🍸</b>")
+START_MSG = os.environ.get("START_MESSAGE", "<b>Hello, {mention}\n\nThis Is a Permanent File Store Bot Of @MovieVillaYT 🍸</b>")
 try:
     ADMINS=[]
     for x in (os.environ.get("ADMINS", "1782834874").split()):
