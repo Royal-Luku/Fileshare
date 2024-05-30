@@ -95,14 +95,7 @@ async def start_command(client: Client, message: Message):
 
 
     else:
-        reply_markup = InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton("ABOUT ME", callback_data = "about"),
-                    InlineKeyboardButton("CLOSE", callback_data = "close")
-                ]
-            ]
-        )
+        reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("Join Our Channel 🍿", url="t.me/MovieVillaYT")]])
         await message.reply_text(
             text = START_MSG.format(
                 first = message.from_user.first_name,
