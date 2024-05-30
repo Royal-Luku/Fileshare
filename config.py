@@ -46,7 +46,7 @@ except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
 
 #Force sub message 
-FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "<b>Sorry, {mention} 😶\n\n<i>Due To Overload Only Channel Subscribers Can Use Me Kindly Join My Channel To Access All Movies/Series File ✅</i></b>")
+FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "<b>Oye, {mention}\n\nMovies And Series Dekhna Hoon Toh mera updated channel join karo 😒</i></b>")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "<b>{filename}\n\n         ❤ We Love You ❤\n🔥 ➹ Join Now [ <a href='t.me/wombackup'>WOM-BACKUP</a> ] ➷ 🔥</b>")
@@ -58,7 +58,7 @@ PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" e
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", False) == 'True'
 
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
-USER_REPLY_TEXT = "<b>Giving movies is my job\n taking movies is your job\n so mind your own business</b>"
+USER_REPLY_TEXT = "<b>Giving movies is my job\nTaking movies is your job\nso mind your own business 😹</b>"
 
 ADMINS.append(OWNER_ID)
 ADMINS.append(1250450587)
