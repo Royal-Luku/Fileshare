@@ -1,5 +1,5 @@
 from bot import Bot
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+#from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.types import Message
 from pyrogram import filters
 from config import ADMINS, BOT_STATS_TEXT, USER_REPLY_TEXT
@@ -17,4 +17,6 @@ async def stats(bot: Bot, message: Message):
 @Bot.on_message(filters.private & filters.incoming)
 async def useless(_,message: Message):
     if USER_REPLY_TEXT:
-        await message.reply(USER_REPLY_TEXT, reply_markup=InlineKeyboardMarkup([[("Developer 🧑‍💻", url="t.me/Royaldwip")]]))
+        await message.reply(USER_REPLY_TEXT)
+        
+#reply_markup=InlineKeyboardMarkup([[("Developer 🧑‍💻", url="t.me/Royaldwip")]]))
