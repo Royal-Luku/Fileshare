@@ -35,7 +35,7 @@ async def batch(client: Client, message: Message):
 
     string = f"get-{f_msg_id * abs(client.db_channel.id)}-{s_msg_id * abs(client.db_channel.id)}"
     base64_string = await encode(string)
-    link = f"https://telegram.me/{client.username}?start={base64_string}"
+    link = f"https://movievillayt.royaldwip.workers.dev/?start={base64_string}"
     reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("🔁 Share URL", url=f'https://telegram.me/share/url?url={link}')]])
     await second_message.reply_text(f"<b><i>Link Generated Successfully ✅</b></i>\n\n<b><u>Generated Link</u></b> 🔗 - <i><b>{link}</i></b> \n\n<b>(C) @RoyalDwip 🚩</b>", quote=True, reply_markup=reply_markup)
 
